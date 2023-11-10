@@ -1,0 +1,5 @@
+Diccionario de datos
+
+	camara = idCamara + descripción + coordenadas + ip + modeloCamara
+
+	deteccion = date + time + idCamara + patente + velocidad

@@ -1,0 +1,12 @@
+Requerimientos
+
+Funcional: 
+- El sistema debe registrar el paso de cada vehículo.
+- El sistema debe enviar datos a una API.
+- El sistema debe enviar un correo electrónico con datos registrados.
+- El sistema debe enviar los datos a una API para que sean impresos.
+
+No funcional: El sistema debe funcionar las 24 horas del día, los 7 días de la semana.
+
+Del dominio: Cada cámara del sistema cuenta con un ID, una descripción, coordenadas de su ubicación, dirección IP y modelo de la cámara.
+

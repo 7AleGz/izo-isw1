@@ -1,0 +1,12 @@
+Reglas de negocio
+
+Hecho: 
+	- Cada paso vehícular debe ser registrado. 
+	- Se deben imprimir 3 copias con los datos si supera los 100 km/h.
+	- Si la velocidad supera los 100 km/h se envía un correo electrónico a “alertas@ciudad” y son enviados los datos a una impresora para imprimirlos 3 veces.
+
+Inferencia: Si la velocidad supera los 70 km/h y es menor a 100 km/h se envía un correo electrónico a “avisos@ciudad”.
+
+Acción disparadora: 
+	- Si la velocidad de la detección es mayor a 70 km/h deberá enviar los datos a una API para su almacenamiento en DB.
+	- El sistema recibe los datos y realiza acciones en base a su velocidad.

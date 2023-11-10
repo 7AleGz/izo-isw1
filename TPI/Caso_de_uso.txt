@@ -1,0 +1,24 @@
+Casos de uso
+
+Caso de uso: Registro de velocidad vehícular.
+
+Actores: Cámara de video control (primario).
+
+Pre-condición: -
+
+Camino básico: 
+	El sistema registra los datos (Detección) del paso de un vehículo enviados por la cámara.
+	El sistema evalúa que la velocidad sea menor a 70 km/h.
+
+Caminos alternativos:
+      2.a La velocidad es mayor a 70 km/h y menor a 100 km/h.
+      2.a.1 El sistema envía los datos recibidos por la cámara a una API que se encargará de guardarlos en base de datos.
+      2.a.2 El sistema envía un correo con los datos a "avisos@ciudad".
+
+      2.b La velocidad es mayor a 100 km/h.
+      2.b.1 El sistema envía los datos recibidos por la cámara a una API que se encargará de guardarlos en base de datos.
+      2.b.2 El sistema envía un correo con los datos que envió la cámara a la cuenta "alertas@ciudad".
+      2.b.3 El sistema envía 3 veces los datos a una impresora para que sean impresos.
+
+Escenario de éxito: El sistema registra correctamente los datos.
+Escenario de fracaso: La detección no se registra correctamente por error en uno de los pasos.
